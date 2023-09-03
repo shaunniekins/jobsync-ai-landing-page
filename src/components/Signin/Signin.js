@@ -1,8 +1,13 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
-const Signin = ({ isUser, setIsUser }) => {
+const Signin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const router = useRouter();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -19,8 +24,6 @@ const Signin = ({ isUser, setIsUser }) => {
 
     setEmail("");
     setPassword("");
-
-    // Add any additional logic you want to perform on form submission
   };
 
   return (
@@ -60,7 +63,7 @@ const Signin = ({ isUser, setIsUser }) => {
         Don't have an account?{" "}
         <button
           className="text-[#54B5E6] font-semibold"
-          onClick={() => setIsUser(!isUser)}>
+          onClick={() => router.push("/signup")}>
           Sign Up
         </button>
       </p>

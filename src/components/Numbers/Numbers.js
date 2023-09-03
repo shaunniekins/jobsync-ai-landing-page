@@ -11,7 +11,7 @@ const NumItem = ({ stat, desc }) => (
 
 const Numbers = () => {
   return (
-    <div className="bg-white px-6 md:px-24 py-[10px] md:py-[50px] justify-around flex space-x-[10px] md:space-x-[102px] lg:space-x-[262px]">
+    <div className="bg-green-300 w-screen px-8 lg:px-[350px] py-[10px] md:py-[50px] justify-around flex space-x-[10px] md:space-x-[102px] lg:space-x-[262px]">
       <NumItem stat="100k+" desc="Users Interviewed" />
       <NumItem stat="40K+" desc="Users Found Jobs" />
       <NumItem stat="50K+" desc="Jobs Recommended" />

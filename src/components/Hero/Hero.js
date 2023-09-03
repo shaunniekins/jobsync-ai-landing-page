@@ -11,9 +11,10 @@ const Hero = () => {
   };
   return (
     <div
-      className="font-Montserrat text-[700] font-[700] flex flex-col md:flex-row w-screen"
+      id="hero"
+      className="font-Montserrat text-[700] font-[700] flex flex-col md:flex-row w-screen bg-no-repeat bg-cover px-8 lg:px-[150px]"
       style={backgroundImageStyle}>
-      <div className="flex flex-col justify-center mt-[55px] md:mt-[105px] mb-[55px] md:mb-[185px] px-[30px] md:px-0 md:ml-[95px]">
+      <div className="flex flex-col justify-center mt-[55px] md:mt-[105px] mb-[55px] md:mb-[185px] md:px-0 md:ml-[96px]">
         <p className="text-center md:text-left text-white text-3xl md:text-5xl font-bold leading-[1.4] md:leading-[57.60px] mb-4 md:mb-6">
           With the power of <br /> automation,{" "}
           <span className="text-[#54B5E6]">

@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import Signin from "../../components/Signin/Signin";
+import Signup from "../../components/Signup/Signup";
 
-export default function SigninRoute() {
+export default function SignupRoute() {
   const router = useRouter();
 
   return (
@@ -19,7 +19,7 @@ export default function SigninRoute() {
       </Link>
 
       <div className="w-full md:w-[435px] px-5 md:px-0 flex flex-col items-center">
-        <Signin />
+        <Signup />
       </div>
     </div>
   );

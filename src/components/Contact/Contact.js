@@ -1,15 +1,21 @@
 const Contact = () => {
   return (
-    <div className="w-screen px-[125px] py-[100px] bg-white md:gap-x-[200px] justify-center items-center flex flex-col sm:flex-row font-Montserrat">
-      <img className="max-h-[500px] rounded-[20px]" src="support-img.png" />
+    <div
+      id="contact"
+      className="w-screen px-8 xl:px-[350px] my-[100px] bg-green-300 flex flex-col items-center justify-center lg:flex-row gap-x-[100px] font-Montserrat">
+      <img
+        className="w-full lg:w-[500px] max-w-[500px] h-auto lg:h-[500px] rounded-20 "
+        src="support-img.png"
+        alt="Support"
+      />
       <div className="flex flex-col">
-        <div className="text-slate-900 text-[40px] font-bold leading-[50px]">
+        <div className="text-slate-900 text-[20px] md:text-[30px] lg:text-[40px] font-bold md:leading-[40px] lg:leading-[50px]">
           We’ll love to hear from you, <br />
           Get in touch.
         </div>
         <form
           action=""
-          className="flex flex-col mt-[50px] sm:mr-16 items-center sm:items-start gap-[50px]">
+          className="flex flex-col mt-[50px] sm:mr-16 items-center sm:items-start gap-y-[50px]">
           <div className="w-full">
             <input
               type="text"

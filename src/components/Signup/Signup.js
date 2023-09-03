@@ -1,4 +1,9 @@
-const Signup = ({ isUser, setIsUser }) => {
+"use client";
+
+import { useRouter } from "next/navigation";
+
+const Signup = () => {
+  const router = useRouter();
   return (
     <>
       <h1 className="text-black text-[24px] font-bold mb-[31px]">Sign Up</h1>
@@ -42,7 +47,7 @@ const Signup = ({ isUser, setIsUser }) => {
         Already have an account?{" "}
         <button
           className="text-[#54B5E6] font-semibold"
-          onClick={() => setIsUser(!isUser)}>
+          onClick={() => router.push("/signin")}>
           Sign In
         </button>
       </p>

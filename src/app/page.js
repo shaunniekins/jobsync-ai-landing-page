@@ -11,17 +11,18 @@ import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="w-screen">
       <Navbar />
-      {/* <Hero /> */}
-      {/* <Numbers /> */}
-      {/* <Dashboard /> */}
-      {/* <Purpose /> */}
-      {/* <Services />  */}
+      <Hero />
+      <Numbers />
+      <Dashboard />
+      <Purpose />
+      <Services />
       {/* <Testimonials /> */}
-      {/* <Faqs /> */}
-      {/* <Contact /> */}
+      <Faqs />
+      <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
+// Need fix: testimonials,
