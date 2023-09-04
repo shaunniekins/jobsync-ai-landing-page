@@ -2,9 +2,9 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-screen px-8 xl:px-[350px] my-[100px] bg-green-300 flex flex-col items-center justify-center lg:flex-row gap-x-[100px] font-Montserrat">
+      className="w-screen px-8 xl:px-[350px] mb-[100px] lg:mt-[100px] flex flex-col items-center justify-center lg:flex-row gap-x-[100px] font-Montserrat">
       <img
-        className="w-full lg:w-[500px] max-w-[500px] h-auto lg:h-[500px] rounded-20 "
+        className="w-full lg:w-[500px] max-w-[500px] h-auto lg:h-[500px] rounded-20"
         src="support-img.png"
         alt="Support"
       />

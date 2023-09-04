@@ -18,7 +18,7 @@ export default function SignupRoute() {
         />
       </Link>
 
-      <div className="w-full md:w-[435px] px-5 md:px-0 flex flex-col items-center">
+      <div className="w-full pb-[50px] md:w-[435px] px-5 md:px-0 flex flex-col items-center">
         <Signup />
       </div>
     </div>

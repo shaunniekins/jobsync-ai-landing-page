@@ -104,7 +104,7 @@ const Navbar = () => {
           {!isMobileMenuOpen ? (
             <span className="text-white text-base font-normal">☰</span>
           ) : (
-            <span className="text-white text-base font-normal">⨳</span>
+            <span className="text-white text-base font-normal">X</span>
           )}
         </button>
         {isMobileMenuOpen && (

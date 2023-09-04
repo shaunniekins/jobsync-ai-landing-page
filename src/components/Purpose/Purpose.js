@@ -1,12 +1,16 @@
+"use client";
+
+import React from "react";
+
 const Purpose = () => {
   return (
     <div
       id="purpose"
-      className="bg-green-500 w-screen flex flex-col items-center font-Montserrat px-8 xl:px-[450px]">
+      className="w-screen flex flex-col justify-center items-center font-Montserrat px-8 xl:px-[250px] 2xl:px-[450px]">
       <h5 className="text-slate-900 text-3xl sm:text-4xl font-bold mt-8 sm:mt-16 text-center">
         What we do
       </h5>
-      <div className="flex flex-col lg:flex-row items-center my-8 sm:my-16 gap-y-8 lg:gap-y-0 gap-x-[131px]">
+      <div className="flex flex-col 2xl:flex-row items-center justify-between my-8 sm:my-16 gap-y-8 2xl:gap-y-0 2xl:gap-x-[131px]">
         <div className="flex flex-col text-center lg:text-left">
           <div className="text-slate-900 text-xl sm:text-2xl font-bold mb-4">
             Unveiling Our Purpose
@@ -21,7 +25,7 @@ const Purpose = () => {
           </div>
         </div>
         <img
-          className="w-full max-w-md h-auto sm:w-full sm:max-w-[513px] sm:h-auto lg:max-w-none lg:w-auto lg:h-auto"
+          className="max-w-full h-auto rounded-t-lg sm:rounded-l-lg sm:rounded-t-none"
           src="ladder.png"
           alt="Ladder"
         />

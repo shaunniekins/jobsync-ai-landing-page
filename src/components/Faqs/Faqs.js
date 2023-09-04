@@ -24,7 +24,7 @@ function FAQItem({ question, answer }) {
 
 const Faqs = () => {
   return (
-    <div className="bg-green-500 flex-col justify-center items-center gap-[100px] flex font-Montserrat w-screen mt-[100px] px-8 xl:px-[450px] pb-[100px]">
+    <div className="flex-col justify-center items-center gap-[100px] flex font-Montserrat w-screen mt-[100px] px-8 xl:px-[250px] 2xl:px-[450px] pb-[100px]">
       <div className="flex-col justify-center items-center flex w-full">
         <h1 className="text-center text-black text-[40px] font-semibold mb-[20px]">
           Frequently Asked Questions

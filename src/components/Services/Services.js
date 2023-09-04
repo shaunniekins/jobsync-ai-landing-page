@@ -41,20 +41,20 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="bg-green-300 w-screen flex flex-col justify-center items-center font-Montserrat px-8 xl:px-[450px]">
-      <h2 className="text-center text-slate-900 text-2xl sm:text-3xl font-bold sm:my-[100px]">
+      className="w-screen flex flex-col justify-center items-center font-Montserrat px-8 xl:px-[250px] 2xl:px-[450px]">
+      <h2 className="text-center text-slate-900 text-2xl sm:text-3xl font-bold py-[100px]">
         Our Comprehensive Range of Services
       </h2>
       {serviceItems.map((item, index) => (
         <div
           key={index}
-          className={`flex items-center gap-x-[220px] mb-[120px] flex-col lg:flex-row ${
+          className={`flex items-center gap-x-[220px] gap-y-[30px] lg:gap-y-[30px] mb-[120px] flex-col lg:flex-row ${
             index % 2 === 1 ? "lg:flex-row-reverse" : ""
           }`}>
           <img
             src={item.imgSrc}
             alt={item.imgAlt}
-            className="w-[180px] h-[190px] lg:w-[427px] lg:h-[353px]"
+            className="w-[180px] h-[190px] sm:w-[280px] sm:h-[290px] md:w-[322px] md:h-[322px] lg:w-[422px] lg:h-[425px]"
           />
           <div className="flex flex-col items-center">
             <h3 className="text-center text-black text-xl font-bold mb-[8px]">
