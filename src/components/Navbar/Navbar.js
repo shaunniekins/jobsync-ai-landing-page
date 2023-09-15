@@ -1,14 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const NavItem = ({ text, active, onClick }) => (
   <div
     onClick={onClick}
     className={`cursor-pointer justify-center items-center gap-2.5 flex ${
-      active ? "text-white" : "text-[#9B9B9B]"
-    }`}>
+      active ? "text-white hover:text-white" : "text-[#9B9B9B]"
+    } hover:text-gray-600`}>
     <div className="text-base font-semibold">{text}</div>
   </div>
 );
@@ -20,6 +20,8 @@ const Navbar = () => {
   const [isServices, setIsServices] = useState(false);
   const [isAbout, setIsAbout] = useState(false);
   const [isContact, setIsContact] = useState(false);
+
+  const [activeSection, setActiveSection] = useState("hero");
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -64,37 +66,65 @@ const Navbar = () => {
     toggleMobileMenu();
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const heroSection = document.getElementById("hero");
+      const servicesSection = document.getElementById("services");
+      const aboutSection = document.getElementById("purpose");
+      const contactSection = document.getElementById("contact");
+
+      if (
+        scrollY >= heroSection.offsetTop &&
+        scrollY < servicesSection.offsetTop
+      ) {
+        setActiveSection("hero");
+      } else if (
+        scrollY >= servicesSection.offsetTop &&
+        scrollY < aboutSection.offsetTop
+      ) {
+        setActiveSection("services");
+      } else if (
+        scrollY >= aboutSection.offsetTop &&
+        scrollY < contactSection.offsetTop
+      ) {
+        setActiveSection("purpose");
+      } else if (scrollY >= contactSection.offsetTop) {
+        setActiveSection("contact");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="sticky top-0 z-40 w-screen px-8 lg:px-[200px] pt-[18px] pb-3 bg-[#061624CC] bg-opacity-80 shadow backdrop-blur-[28px] justify-between items-center flex font-Montserrat">
+    <div className="sticky top-0 z-40 w-screen px-8 lg:px-[200px] pt-[18px] pb-3 bg-[#061624CC] bg-opacity-80 shadow backdrop-blur-[28px] justify-between items-center flex font-Montserrat select-none">
       <img className="w-[71px] h-[73px]" src="jobsync-logo.svg" alt="Logo" />
-      <div className="hidden sm:flex justify-center items-center gap-5">
+      <div className="hidden sm:flex justify-center items-center space-x-12">
         <NavItem
           text="Home"
-          active={isHero}
-          onClick={() => {
-            handleScrollToSection("hero");
-          }}
+          active={activeSection === "hero"}
+          onClick={() => handleScrollToSection("hero")}
         />
         <NavItem
           text="Services"
-          active={isServices}
-          onClick={() => {
-            handleScrollToSection("services");
-          }}
+          active={activeSection === "services"}
+          onClick={() => handleScrollToSection("services")}
         />
         <NavItem
           text="About us"
-          active={isAbout}
-          onClick={() => {
-            handleScrollToSection("purpose");
-          }}
+          active={activeSection === "purpose"}
+          onClick={() => handleScrollToSection("purpose")}
         />
         <NavItem
           text="Contact Us"
-          active={isContact}
-          onClick={() => {
-            handleScrollToSection("contact");
-          }}
+          active={activeSection === "contact"}
+          onClick={() => handleScrollToSection("contact")}
         />
       </div>
       <div className="sm:hidden">
@@ -112,31 +142,23 @@ const Navbar = () => {
             <div className="flex flex-col p-5 gap-5">
               <NavItem
                 text="Home"
-                active={isHero}
-                onClick={() => {
-                  handleScrollToSection("hero");
-                }}
+                active={activeSection === "hero"}
+                onClick={() => handleScrollToSection("hero")}
               />
               <NavItem
                 text="Services"
-                active={isServices}
-                onClick={() => {
-                  handleScrollToSection("services");
-                }}
+                active={activeSection === "services"}
+                onClick={() => handleScrollToSection("services")}
               />
               <NavItem
                 text="About us"
-                active={isAbout}
-                onClick={() => {
-                  handleScrollToSection("purpose");
-                }}
+                active={activeSection === "purpose"}
+                onClick={() => handleScrollToSection("purpose")}
               />
               <NavItem
                 text="Contact Us"
-                active={isContact}
-                onClick={() => {
-                  handleScrollToSection("contact");
-                }}
+                active={activeSection === "contact"}
+                onClick={() => handleScrollToSection("contact")}
               />
             </div>
             {/* <button

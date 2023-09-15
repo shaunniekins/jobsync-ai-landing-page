@@ -32,13 +32,13 @@ const Hero = () => {
           <br />
           guiding you towards success in the ever-evolving job market.
         </p>
-        <div className="flex flex-col md:flex-row gap-y-4 md:gap-x-4">
+        <div className="flex flex-col md:flex-row gap-y-4 md:gap-x-7">
           <button
             className="px-6 py-2 md:py-3 bg-[#54B5E6] rounded-[24px] text-white text-sm md:text-base font-semibold mb-1 md:mb-0"
             onClick={() => router.push("/signup")}>
             Create an account
           </button>
-          <button className="px-6 py-2 md:py-3 bg-[#0C1C2A] rounded-[6px] border-[2px] border-[#54B5E6] text-[#54B5E6] text-sm md:text-base font-normal">
+          <button className="px-6 py-2 md:py-3 bg-[#0C1C2A] rounded-[24px] border-[2px] border-[#54B5E6] text-[#54B5E6] text-sm md:text-base font-normal">
             Watch Demo Video
           </button>
         </div>

@@ -107,7 +107,9 @@ const Testimonials = () => {
   ));
 
   return (
-    <div className="bg-[#f5f6f6] w-screen pt-[100px] font-Montserrat">
+    <div
+      id="purpose"
+      className="bg-[#f5f6f6] w-screen pt-[100px] font-Montserrat">
       <h1 className="text-center text-slate-900 text-[32px] font-bold">
         What Our Customers Say
       </h1>
