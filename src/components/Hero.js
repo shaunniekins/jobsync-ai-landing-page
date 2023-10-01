@@ -9,15 +9,11 @@ const Hero = () => {
   const backgroundImageStyle = {
     backgroundImage: `linear-gradient(90deg, #061624 0%, rgba(6, 22, 36, 0.92) 46.88%, rgba(6, 22, 36, 0.42) 78.13%, rgba(6, 22, 36, 0.00) 100%), url('https://bedrocksolicitors.co.uk/wp-content/uploads/2021/07/lady-small.jpg')`,
   };
-  // <div
-  //   id="hero"
-  //   className="font-Montserrat text-[700] font-[700] flex flex-col md:flex-row w-screen bg-no-repeat bg-cover px-8 2xl:px-[150px]"
-  //   style={backgroundImageStyle}>
   return (
     <div
       id="hero"
       style={{ backgroundImage: "url(bg-img.png" }}
-      className="font-Montserrat text-[700] font-[700] flex flex-col md:flex-row w-screen bg-no-repeat bg-cover px-8 2xl:px-[150px]">
+      className="font-Montserrat text-[700] font-[700] flex flex-col md:flex-row bg-no-repeat bg-cover px-8 2xl:px-[150px]">
       <div className="flex flex-col justify-center mt-[55px] md:mt-[105px] mb-[55px] md:mb-[185px] md:ml-[96px]">
         <p className="text-center md:text-left text-white text-3xl md:text-5xl font-bold leading-[1.4] md:leading-[57.60px] mb-4 md:mb-6">
           With the power of <br /> automation,{" "}

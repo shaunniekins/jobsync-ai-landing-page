@@ -1,42 +1,11 @@
-/**
- * 
- * {
-    content:
-      "This platform proved me wrong. It helped me create standout CVs and cover letters tailored to each application. The AI-powered guidance elevated my materials, increasing my chances of landing interviews.",
-    customerImage: "customer-1.svg",
-    customerName: "J. Williams",
-    rating: 5,
-  },
-  {
-    content:
-      "This platform revolutionized my job search. Its advanced algorithms quickly understood my career goals and presented personalized job recommendations. Impressed with its accuracy and efficiency.",
-    customerImage: "customer-2.svg",
-    customerName: "Janet Frank",
-    rating: 5,
-  },
-  {
-    content:
-      "This AI-powered job assistant platform exceeded my expectations. The tailored job matches provided relevant opportunities I wouldn't have found on my own. It made the process smooth and enjoyable.",
-    customerImage: "customer-3.svg",
-    customerName: "Ayo Dakpo",
-    rating: 3,
-  },
-  {
-    content:
-      "Thanks to this job assistant AI platform, I found my dream job effortlessly. The personalized job recommendations matched my skills and preferences perfectly. Highly recommended!",
-    customerImage: "customer-4.svg",
-    customerName: "Grace Chika",
-    rating: 3,
-  },
- */
 const Testimonial = ({ content, customerImage, customerName, rating }) => {
   const stars = Array.from({ length: 5 }, (_, index) => (
     <img key={index} className="w-4 h-4" src="star.svg" alt="Star" />
   ));
 
   return (
-    <div className="px-[30px] py-[40px] bg-white rounded-xl w-[470px] h-[350px] flex flex-col justify-between">
-      <div className="text-center text-zinc-800 text-base font-normal leading-normal">
+    <div className="px-[20px] md:px-[30px] py-[10px] md:py-[40px] bg-white rounded-xl w-[350px] md:w-[470px] md:h-[350px] flex flex-col justify-between">
+      <div className="text-center text-zinc-800 text-sm md:text-base font-normal leading-normal mb-5 md:mb-0">
         {content}
       </div>
       <div className="flex flex-col items-center overflow-hidden">
@@ -109,14 +78,14 @@ const Testimonials = () => {
   return (
     <div
       id="purpose"
-      className="bg-[#f5f6f6] w-screen pt-[100px] font-Montserrat">
-      <h1 className="text-center text-slate-900 text-[32px] font-bold">
+      className="w-full bg-[#f5f6f6] pt-[100px] font-Montserrat">
+      <h1 className="text-center text-slate-900 text-[32px] font-bold px-8 xl:px-[250px] 2xl:px-[450px]">
         What Our Customers Say
       </h1>
       <h2 className="text-center text-black text-base font-semibold lg:mb-[95px]">
         Testimonials That Speak Volumes.
       </h2>
-      <div className="flex overflow-x-auto mt-4 space-x-4 p-4">
+      <div className="flex overflow-x-auto scrollbar-thin scrollbar-thumb-gray-100 scrollbar-track-gray-100 mt-4 space-x-4 p-4">
         <div className="w-auto flex gap-x-[25px]">{testimonials}</div>
       </div>
 

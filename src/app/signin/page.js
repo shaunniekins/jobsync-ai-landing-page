@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import Signin from "../../components/Signin/Signin";
+import Signin from "../../components/Signin";
 
 export default function SigninRoute() {
   const router = useRouter();

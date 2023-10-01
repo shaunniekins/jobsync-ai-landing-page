@@ -103,8 +103,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="sticky top-0 z-40 w-screen px-8 lg:px-[200px] pt-[18px] pb-3 bg-[#061624CC] bg-opacity-80 shadow backdrop-blur-[28px] justify-between items-center flex font-Montserrat select-none">
-      <img className="w-[71px] h-[73px]" src="jobsync-logo.svg" alt="Logo" />
+    <div className="sticky top-0 z-40 px-8 lg:px-[200px] pt-[8px] pb-2 md:pt-[18px] md:pb-3 bg-[#061624CC] bg-opacity-80 shadow backdrop-blur-[28px] justify-between items-center flex font-Montserrat select-none">
+      <img
+        className="w-[60px] h-[62px] md:w-[71px] md:h-[73px]"
+        src="jobsync-logo.svg"
+        alt="Logo"
+      />
       <div className="hidden sm:flex justify-center items-center space-x-12">
         <NavItem
           text="Home"
@@ -129,7 +133,7 @@ const Navbar = () => {
       </div>
       <div className="sm:hidden">
         <button
-          className="px-6 py-2.5 bg-[#54B5E6] rounded-lg justify-start items-center gap-2.5 flex"
+          className="px-4 py-1.5 md:px-6 md:py-2.5 bg-[#54B5E6] rounded-lg justify-start items-center gap-2.5 flex"
           onClick={toggleMobileMenu}>
           {!isMobileMenuOpen ? (
             <span className="text-white text-base font-normal">☰</span>
@@ -138,7 +142,7 @@ const Navbar = () => {
           )}
         </button>
         {isMobileMenuOpen && (
-          <div className="absolute top-[103px] left-0 w-screen bg-[#061624CC] shadow font-Montserrat">
+          <div className="absolute top-[103px] left-0 bg-[#061624CC] shadow font-Montserrat">
             <div className="flex flex-col p-5 gap-5">
               <NavItem
                 text="Home"

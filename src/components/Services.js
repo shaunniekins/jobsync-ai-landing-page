@@ -41,15 +41,15 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="w-screen flex flex-col justify-center items-center font-Montserrat px-8 xl:px-[250px] 2xl:px-[450px]">
+      className="flex flex-col justify-center items-center font-Montserrat px-8 xl:px-[250px] 2xl:px-[450px]">
       <h2 className="text-center text-slate-900 text-2xl sm:text-3xl font-bold py-[100px]">
         Our Comprehensive Range of Services
       </h2>
       {serviceItems.map((item, index) => (
         <div
           key={index}
-          className={`flex items-center gap-x-[220px] gap-y-[30px] lg:gap-y-[30px] mb-[120px] flex-col lg:flex-row ${
-            index % 2 === 1 ? "lg:flex-row-reverse" : ""
+          className={`flex items-center gap-x-[220px] gap-y-[30px] lg:gap-y-[30px] mb-[120px] flex-col ${
+            index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"
           }`}>
           <img
             src={item.imgSrc}

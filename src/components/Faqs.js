@@ -13,9 +13,15 @@ function FAQItem({ question, answer }) {
     <div className="w-full text-black text-xl font-medium shadow-md rounded-[20px] px-6 py-[24px] flex flex-col">
       <div className="flex justify-between items-center">
         <p>{question}</p>
-        <button onClick={toggleOpen}>
-          <img src="add-circle.svg" alt="Add Circle" />
-        </button>
+        {isOpen ? (
+          <button onClick={toggleOpen}>
+            <img src="minus-circle.svg" alt="Minus Circle" />
+          </button>
+        ) : (
+          <button onClick={toggleOpen}>
+            <img src="add-circle.svg" alt="Add Circle" />
+          </button>
+        )}
       </div>
       {isOpen && <p className="mt-4 text-[#9B9B9B] text-[18px]">{answer}</p>}
     </div>

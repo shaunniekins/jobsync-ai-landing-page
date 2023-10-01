@@ -9,7 +9,7 @@ const FeatureItem = ({ text }) => (
 
 const Dashboard = () => {
   return (
-    <div className="w-screen font-Montserrat">
+    <div className="font-Montserrat">
       <div className="mt-8 sm:mt-16 text-center">
         <span className="text-[#44B5C1] text-3xl sm:text-4xl font-bold">
           Our
@@ -19,7 +19,8 @@ const Dashboard = () => {
           Dashboard
         </span>
       </div>
-      <div className="mt-4 sm:mt-8 text-center text-zinc-800 text-[16px] font-medium leading-snug mb-8 sm:mb-16 px-8 xl:px-[250px] 2xl:px-[450px]">
+
+      <div className="text-center text-zinc-800 text-[16px] font-medium leading-snug mt-4 sm:mt-8 mb-8 sm:mb-16 px-8 xl:px-[250px] 2xl:px-[450px]">
         The dashboard serves as the central hub within the Platform, providing
         users with a comprehensive overview and easy access to the platform's
         key features and functionalities. Designed with a user-centric approach,

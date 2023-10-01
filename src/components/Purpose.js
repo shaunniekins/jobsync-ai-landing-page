@@ -4,7 +4,7 @@ import React from "react";
 
 const Purpose = () => {
   return (
-    <div className="w-screen flex flex-col justify-center items-center font-Montserrat px-8 xl:px-[250px] 2xl:px-[450px]">
+    <div className="flex flex-col justify-center items-center font-Montserrat px-8 xl:px-[250px] 2xl:px-[450px]">
       <h5 className="text-slate-900 text-3xl sm:text-4xl font-bold mt-8 sm:mt-16 text-center">
         What we do
       </h5>
