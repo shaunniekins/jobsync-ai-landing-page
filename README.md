@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## JobSync AI Landing Page
 
-## Getting Started
+This repository contains the source code for the landing page of JobSync AI, a platform powered by artificial intelligence that aids in the job search and recruitment process.
 
-First, run the development server:
+### What is JobSync AI?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+JobSync AI utilizes AI technology to help:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Individuals** find their ideal jobs and advance their careers.
+- **Businesses and recruiters** streamline the hiring process and find qualified candidates.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### This Landing Page
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This landing page serves as the entry point for JobSync AI. It is designed to:
 
-## Learn More
+- **Capture user attention** and highlight the benefits of using JobSync AI.
+- **Convert visitors into users** by encouraging them to sign up for an account.
 
-To learn more about Next.js, take a look at the following resources:
+### Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Clear and concise explanation** of JobSync AI's value proposition.
+- **Compelling call-to-action buttons** for signing up or learning more.
+- **Integration with sign-in and sign-up functionalities** for user account creation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Note:** This is part of the internship at Prifina - Liberty. Equality. Data.
