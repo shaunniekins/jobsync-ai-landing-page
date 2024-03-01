@@ -13,17 +13,13 @@ const Footer = () => {
   return (
     <div className="w-screen bg-slate-900 px-8 lg:px-[200px] pt-[30px] 2xl:pt-[100px] pb-[20px] 2xl:pb-[50px] font-Montserrat">
       <div className="flex flex-col items-center 2xl:items-start gap-y-[20px] 2xl:gap-y-0">
-        <img
-          className="w-[60px] self-center 2xl:self-start"
-          src="jobsync-logo.svg"
-          alt="JobSync Logo"
-        />
+        <h1>hello</h1>
         <div className="self-center 2xl:self-end flex gap-[24px]">
-          <LogoFacebook color="white" height="24px" width="24px" />
-          <LogoInstagram color="white" height="24px" width="24px" />
-          <LogoTwitter color="white" height="24px" width="24px" />
-          <LogoYoutube color="white" height="24px" width="24px" />
-          <LogoLinkedin color="white" height="24px" width="24px" />
+          <LogoFacebook color={"#FFFFFF"} height="24px" width="24px" />
+          <LogoInstagram color={"#FFFFFF"} height="24px" width="24px" />
+          <LogoTwitter color={"#FFFFFF"} height="24px" width="24px" />
+          <LogoYoutube color={"#FFFFFF"} height="24px" width="24px" />
+          <LogoLinkedin color={"#FFFFFF"} height="24px" width="24px" />
         </div>
       </div>
       <hr className="border border-white border-opacity-50 mt-[20px] mb-[50px]" />
